@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import MyComponent from './components/my-component';
 
 class App extends Component {
   render() {
@@ -12,6 +13,10 @@ class App extends Component {
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
+        <p>
+          <MyComponent onClick={() => console.log('clicked!')} text="Text is here" />
+          <MyComponent onClick={() => console.log('clicked another one!')} text="Another text is here" />
         </p>
       </div>
     );
